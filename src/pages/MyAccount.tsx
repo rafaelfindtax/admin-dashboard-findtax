@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { User, Image as ImageIcon, CreditCard, Lock, Building } from "lucide-react";
+import ImageUploader from "@/components/ImageUploader";
 
 const MyAccount = () => {
   return (
@@ -149,7 +150,6 @@ const ImageUpload = () => {
           These images will be displayed in your product gallery. You can add multiple images.
         </p>
         <div>
-          <import ImageUploader from "@/components/ImageUploader" />
           <ImageUploader />
         </div>
       </div>
