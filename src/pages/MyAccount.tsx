@@ -131,24 +131,6 @@ const ProductImagesTab = () => {
         <p className="text-text-secondary mb-4">
           Upload images that showcase your products. These images will be displayed on your vendor profile and product details pages.
         </p>
-        <ImageUpload />
-      </div>
-    </div>
-  );
-};
-
-const ImageUpload = () => {
-  return (
-    <div>
-      <h3 className="text-lg font-semibold mb-4">Upload Product Images</h3>
-      <div className="mb-6">
-        <div className="flex items-center space-x-2 mb-2">
-          <div className="w-2 h-2 rounded-full bg-secondary"></div>
-          <span className="text-sm font-medium">Product Image Gallery</span>
-        </div>
-        <p className="text-sm text-text-secondary mb-4">
-          These images will be displayed in your product gallery. You can add multiple images.
-        </p>
         <div>
           <ImageUploader />
         </div>
