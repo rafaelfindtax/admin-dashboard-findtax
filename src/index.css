@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +90,39 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-neutral-200 text-text-primary font-ubuntu;
   }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-text-tertiary;
+  }
+}
+
+.image-upload-area {
+  @apply border-2 border-dashed border-neutral-300 rounded-lg p-8 text-center cursor-pointer transition-all duration-300 ease-in-out;
+}
+
+.image-upload-area:hover {
+  @apply border-primary bg-neutral-100;
+}
+
+.button-primary {
+  @apply bg-primary text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition-all duration-200;
+}
+
+.button-secondary {
+  @apply bg-secondary text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition-all duration-200;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.content-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.card-hover {
+  @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1;
 }
