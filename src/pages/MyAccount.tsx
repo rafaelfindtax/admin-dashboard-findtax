@@ -3,8 +3,9 @@ import React from "react";
 import Layout from "@/components/Layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { User, Image as ImageIcon, CreditCard, Lock, Building } from "lucide-react";
+import { User, Image as ImageIcon, CreditCard, Lock, Building, Package } from "lucide-react";
 import ImageUploader from "@/components/ImageUploader";
+import ProductRegistration from "@/components/ProductRegistration";
 
 const MyAccount = () => {
   return (
@@ -26,6 +27,10 @@ const MyAccount = () => {
             <TabsTrigger value="images" className="flex items-center space-x-2 data-[state=active]:bg-white data-[state=active]:text-primary">
               <ImageIcon size={16} />
               <span>Product Images</span>
+            </TabsTrigger>
+            <TabsTrigger value="products" className="flex items-center space-x-2 data-[state=active]:bg-white data-[state=active]:text-primary">
+              <Package size={16} />
+              <span>Products</span>
             </TabsTrigger>
             <TabsTrigger value="company" className="flex items-center space-x-2 data-[state=active]:bg-white data-[state=active]:text-primary">
               <Building size={16} />
@@ -61,6 +66,18 @@ const MyAccount = () => {
               </CardHeader>
               <CardContent>
                 <ProductImagesTab />
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="products" className="animate-slideIn">
+            <Card>
+              <CardHeader>
+                <CardTitle>Product Registration</CardTitle>
+                <CardDescription>Register and manage your products</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ProductRegistration />
               </CardContent>
             </Card>
           </TabsContent>
