@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { User, Image as ImageIcon, CreditCard, Lock, Building, Package } from "lucide-react";
 import ImageUploader from "@/components/ImageUploader";
 import ProductRegistration from "@/components/ProductRegistration";
+import CompanyProfileForm from "@/components/CompanyProfileForm";
 
 const MyAccount = () => {
   return (
@@ -89,7 +90,7 @@ const MyAccount = () => {
                 <CardDescription>Manage your company details</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Company content goes here</p>
+                <CompanyProfileForm />
               </CardContent>
             </Card>
           </TabsContent>
