@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Image as ImageIcon, User, Settings } from "lucide-react";
+import { ArrowRight, Image as ImageIcon, User, Settings, Building } from "lucide-react";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -103,6 +103,26 @@ const Index = () => {
                   onClick={() => navigate("/settings")}
                 >
                   Manage Settings
+                  <ArrowRight size={16} className="ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="card-shadow card-hover">
+              <CardContent className="p-6">
+                <div className="mb-4 h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+                  <Building size={24} className="text-green-600" />
+                </div>
+                <h2 className="text-xl font-bold mb-2">Company</h2>
+                <p className="text-text-secondary mb-4">
+                  Manage your company information, logo, and business details
+                </p>
+                <Button 
+                  variant="outline" 
+                  className="flex items-center" 
+                  onClick={() => navigate("/my-account?tab=company")}
+                >
+                  Manage Company
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
