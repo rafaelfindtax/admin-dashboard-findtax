@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "sonner";
 import ImageUploader from "./ImageUploader";
-import { Tag, Globe, FileText, Package, Building } from "lucide-react";
+import { Tag, Globe, FileText, Package, Building, Image } from "lucide-react";
 
 const productCategories = [
   { value: "tech_fiscal", label: "Tecnologia Fiscal", description: "Softwares e APIs para automação fiscal" },
@@ -20,7 +20,7 @@ const productCategories = [
 ];
 
 const vendorTypes = [
-  { value: "fiscal", label: "Fiscal" },
+  { value: "fiscal", label: "Software Fiscal" },
   { value: "erp", label: "ERP" },
   { value: "consulting", label: "Consultoria" },
   { value: "events", label: "Eventos e Cursos" }
@@ -188,7 +188,7 @@ const ProductRegistration = () => {
 
           <div>
             <h3 className="text-base font-medium mb-2 flex items-center gap-2">
-              <ImageIcon size={16} /> Imagens do Produto
+              <Image size={16} /> Imagens do Produto
             </h3>
             <p className="text-sm text-text-secondary mb-4">
               Faça upload de uma ou mais imagens do seu produto. As imagens serão exibidas 
