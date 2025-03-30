@@ -43,24 +43,24 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   return (
     <div className={cn("bg-white h-full shadow-sm w-64 flex flex-col py-6", className)}>
       <div className="px-4 mb-6">
-        <h2 className="text-lg font-bold text-text-primary">Admin Portal</h2>
+        <h2 className="text-lg font-bold text-text-primary">Portal Admin</h2>
       </div>
       
       <div className="flex-1 px-2 space-y-1">
-        <SidebarItem icon={<Home size={20} />} label="Dashboard" to="/" />
-        <SidebarItem icon={<User size={20} />} label="My Account" to="/my-account" />
-        <SidebarItem icon={<Image size={20} />} label="Product Images" to="/my-account/images" />
-        <SidebarItem icon={<Package size={20} />} label="Products" to="/products" />
-        <SidebarItem icon={<FileText size={20} />} label="Documents" to="/documents" />
-        <SidebarItem icon={<Users size={20} />} label="Users" to="/users" />
-        <SidebarItem icon={<Settings size={20} />} label="Settings" to="/settings" />
-        <SidebarItem icon={<HelpCircle size={20} />} label="Help" to="/help" />
+        <SidebarItem icon={<Home size={20} />} label="Painel" to="/" />
+        <SidebarItem icon={<User size={20} />} label="Minha Conta" to="/my-account" />
+        <SidebarItem icon={<Image size={20} />} label="Imagens de Produtos" to="/my-account/images" />
+        <SidebarItem icon={<Package size={20} />} label="Produtos" to="/products" />
+        <SidebarItem icon={<FileText size={20} />} label="Documentos" to="/documents" />
+        <SidebarItem icon={<Users size={20} />} label="Usuários" to="/users" />
+        <SidebarItem icon={<Settings size={20} />} label="Configurações" to="/settings" />
+        <SidebarItem icon={<HelpCircle size={20} />} label="Ajuda" to="/help" />
       </div>
       
       <div className="px-2 mt-auto">
         <button className="flex items-center space-x-3 px-4 py-3 rounded-md w-full hover:bg-neutral-100 text-text-secondary transition-colors">
           <LogOut size={20} />
-          <span className="font-medium">Log Out</span>
+          <span className="font-medium">Sair</span>
         </button>
       </div>
     </div>

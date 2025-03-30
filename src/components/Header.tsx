@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white">
             <User size={20} />
           </div>
-          <span className="font-medium hidden md:block">Admin User</span>
+          <span className="font-medium hidden md:block">Usuário Admin</span>
         </div>
       </div>
     </header>

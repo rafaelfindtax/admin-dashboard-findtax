@@ -12,17 +12,17 @@ const Products = () => {
         <div className="mb-6 flex items-center gap-3">
           <Package size={28} className="text-primary" />
           <div>
-            <h1 className="text-3xl font-bold text-text-primary">Products</h1>
+            <h1 className="text-3xl font-bold text-text-primary">Produtos</h1>
             <p className="text-text-secondary mt-1">
-              Register and manage your products
+              Cadastre e gerencie seus produtos
             </p>
           </div>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle>Product Registration</CardTitle>
-            <CardDescription>Register a new product with all required information</CardDescription>
+            <CardTitle>Cadastro de Produtos</CardTitle>
+            <CardDescription>Cadastre um novo produto com todas as informações necessárias</CardDescription>
           </CardHeader>
           <CardContent>
             <ProductRegistration />

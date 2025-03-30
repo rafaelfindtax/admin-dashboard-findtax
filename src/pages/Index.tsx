@@ -20,17 +20,17 @@ const Index = () => {
             />
           </div>
           <nav className="hidden md:flex items-center space-x-1">
-            <Button variant="ghost" className="text-text-secondary">Dashboard</Button>
-            <Button variant="ghost" className="text-text-secondary">Services</Button>
-            <Button variant="ghost" className="text-text-secondary">About Us</Button>
-            <Button variant="ghost" className="text-text-secondary">Contact</Button>
+            <Button variant="ghost" className="text-text-secondary">Painel</Button>
+            <Button variant="ghost" className="text-text-secondary">Serviços</Button>
+            <Button variant="ghost" className="text-text-secondary">Sobre Nós</Button>
+            <Button variant="ghost" className="text-text-secondary">Contato</Button>
           </nav>
           <div>
             <Button 
               className="bg-primary hover:bg-primary/90"
               onClick={() => navigate("/my-account")}
             >
-              Admin Portal
+              Portal do Admin
             </Button>
           </div>
         </div>
@@ -40,10 +40,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 animate-fadeIn">
             <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
-              Welcome to FIND Tax Solutions Admin
+              Bem-vindo ao FIND Tax Solutions Admin
             </h1>
             <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-              Manage your account, upload product images, and access administrative features
+              Gerencie sua conta, faça upload de imagens de produtos e acesse recursos administrativos
             </p>
           </div>
 
@@ -53,16 +53,16 @@ const Index = () => {
                 <div className="mb-4 h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
                   <User size={24} className="text-primary" />
                 </div>
-                <h2 className="text-xl font-bold mb-2">My Account</h2>
+                <h2 className="text-xl font-bold mb-2">Minha Conta</h2>
                 <p className="text-text-secondary mb-4">
-                  Update your profile information, security settings, and preferences
+                  Atualize suas informações de perfil, configurações de segurança e preferências
                 </p>
                 <Button 
                   variant="outline" 
                   className="flex items-center" 
                   onClick={() => navigate("/my-account")}
                 >
-                  Manage Profile
+                  Gerenciar Perfil
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -73,16 +73,16 @@ const Index = () => {
                 <div className="mb-4 h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center">
                   <ImageIcon size={24} className="text-secondary" />
                 </div>
-                <h2 className="text-xl font-bold mb-2">Product Images</h2>
+                <h2 className="text-xl font-bold mb-2">Imagens de Produtos</h2>
                 <p className="text-text-secondary mb-4">
-                  Upload and manage images for your products to display in vendor details
+                  Faça upload e gerencie imagens para seus produtos exibidos nos detalhes do fornecedor
                 </p>
                 <Button 
                   variant="outline" 
                   className="flex items-center" 
                   onClick={() => navigate("/my-account?tab=images")}
                 >
-                  Upload Images
+                  Enviar Imagens
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -93,16 +93,16 @@ const Index = () => {
                 <div className="mb-4 h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center">
                   <Settings size={24} className="text-text-primary" />
                 </div>
-                <h2 className="text-xl font-bold mb-2">Settings</h2>
+                <h2 className="text-xl font-bold mb-2">Configurações</h2>
                 <p className="text-text-secondary mb-4">
-                  Configure application settings, notifications, and system preferences
+                  Configure as configurações do aplicativo, notificações e preferências do sistema
                 </p>
                 <Button 
                   variant="outline" 
                   className="flex items-center" 
                   onClick={() => navigate("/settings")}
                 >
-                  Manage Settings
+                  Gerenciar Configurações
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -113,16 +113,16 @@ const Index = () => {
                 <div className="mb-4 h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
                   <Building size={24} className="text-green-600" />
                 </div>
-                <h2 className="text-xl font-bold mb-2">Company</h2>
+                <h2 className="text-xl font-bold mb-2">Empresa</h2>
                 <p className="text-text-secondary mb-4">
-                  Manage your company information, logo, and business details
+                  Gerencie as informações da sua empresa, logotipo e detalhes comerciais
                 </p>
                 <Button 
                   variant="outline" 
                   className="flex items-center" 
                   onClick={() => navigate("/my-account?tab=company")}
                 >
-                  Manage Company
+                  Gerenciar Empresa
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -133,16 +133,16 @@ const Index = () => {
                 <div className="mb-4 h-12 w-12 rounded-full bg-indigo-100 flex items-center justify-center">
                   <Users size={24} className="text-indigo-600" />
                 </div>
-                <h2 className="text-xl font-bold mb-2">Users</h2>
+                <h2 className="text-xl font-bold mb-2">Usuários</h2>
                 <p className="text-text-secondary mb-4">
-                  Manage user profiles, permissions, and account information
+                  Gerencie perfis de usuários, permissões e informações de contas
                 </p>
                 <Button 
                   variant="outline" 
                   className="flex items-center" 
                   onClick={() => navigate("/users")}
                 >
-                  Manage Users
+                  Gerenciar Usuários
                   <ArrowRight size={16} className="ml-2" />
                 </Button>
               </CardContent>
@@ -153,7 +153,7 @@ const Index = () => {
 
       <footer className="bg-white border-t border-neutral-200 py-6 px-6">
         <div className="max-w-7xl mx-auto text-center text-text-secondary text-sm">
-          &copy; {new Date().getFullYear()} FIND Tax Solutions. All rights reserved.
+          &copy; {new Date().getFullYear()} FIND Tax Solutions. Todos os direitos reservados.
         </div>
       </footer>
     </div>

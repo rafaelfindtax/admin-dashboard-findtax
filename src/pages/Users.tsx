@@ -11,9 +11,9 @@ const Users = () => {
     <Layout>
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold">User Management</h1>
+          <h1 className="text-3xl font-bold">Gerenciamento de Usuários</h1>
           <p className="text-text-secondary mt-2">
-            View and manage user accounts and profiles
+            Visualize e gerencie contas e perfis de usuários
           </p>
         </div>
         

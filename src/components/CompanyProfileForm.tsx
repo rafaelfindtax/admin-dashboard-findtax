@@ -71,7 +71,7 @@ const CompanyProfileForm = () => {
 
   function onSubmit(data: CompanyFormValues) {
     // In a real application, this would upload the logo and save the company data
-    console.log("Company data submitted:", data);
+    console.log("Dados da empresa enviados:", data);
     console.log("Logo:", logo);
     
     toast.success("Informações da empresa atualizadas com sucesso!");
