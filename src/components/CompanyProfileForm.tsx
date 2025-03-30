@@ -53,7 +53,7 @@ const companyFormSchema = z.object({
 
 type CompanyFormValues = z.infer<typeof companyFormSchema>;
 
-// Mock company data - in a real app, this would come from an API
+// Dados fictícios da empresa - em um aplicativo real, isso viria de uma API
 const defaultValues: Partial<CompanyFormValues> = {
   name: "Minha Empresa",
   description: "Descrição da empresa...",
@@ -70,7 +70,7 @@ const CompanyProfileForm = () => {
   });
 
   function onSubmit(data: CompanyFormValues) {
-    // In a real application, this would upload the logo and save the company data
+    // Em uma aplicação real, isso enviaria o logo e salvaria os dados da empresa
     console.log("Dados da empresa enviados:", data);
     console.log("Logo:", logo);
     
